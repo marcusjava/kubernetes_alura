@@ -5,7 +5,7 @@
 
 <h1 align="center">Alura cursos Projeto Portal de noticias </h1>
 
-### Projeto Kubernetes demonstrado no curso da Alura
+### Curso de Kubernetes: Pods, Services e ConfigMaps
 
 ## 1 - Instalação.
 
@@ -43,7 +43,7 @@ O projeto possui os seguintes items:
 
 ## 4 - Acessando o Portal de Noticias
 
-Para acessar o Portal e o Sistema de Noticias fora do cluster é necessario fazer as seguintes configurações
+Para acessar o Portal e o Sistema de Noticias fora do cluster é necessario fazer as seguintes configurações:
 
 `minikube service portal-svc --url`
 
