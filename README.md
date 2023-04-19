@@ -25,8 +25,9 @@ Kubernetes command-line tools(<a href="https://kubernetes.io/docs/tasks/tools/">
 
 ## 3 - Aplicando as configurações
 
+O projeto possui os seguintes items:
+
 ```markdown
-├── aluracursos.png
 ├── db-noticias-configmap.yml
 ├── db-noticias-svc.yml
 ├── db-noticias.yml
@@ -38,8 +39,7 @@ Kubernetes command-line tools(<a href="https://kubernetes.io/docs/tasks/tools/">
 └── sistema-noticias.yml
 ```
 
-- `IP` - IP publico
-- `DNS` - DNS publico
+`kubectl apply -f item`
 
 ### Usage
 
