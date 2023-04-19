@@ -9,7 +9,7 @@
 
 ## 1 - Instalação Minikube.
 
-    <p>Minikube é uma ferramenta que facilita o aprendizado e desenvolvimento com kubernetes de fácil instalação.  </p>
+Minikube é uma ferramenta que facilita o aprendizado e desenvolvimento com kubernetes de fácil instalação.
 
 ### Input
 
