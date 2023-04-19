@@ -17,47 +17,31 @@ Kubernetes command-line tools(<a href="https://kubernetes.io/docs/tasks/tools/">
 
 <a href='https://minikube.sigs.k8s.io/docs/start/' target="_blank">Minikube</a> é uma ferramenta que facilita o aprendizado e desenvolvimento com kubernetes de fácil instalação.
 
-### Iniciando o cluster
+## 2 - Iniciando o cluster
 
 `minikube start --vm-driver=virtualbox`
 
 <a href="https://minikube.sigs.k8s.io/docs/drivers/" target="_blank">Ver lista de drivers</a>
 
-### Output
+## 3 - Aplicando as configurações
+
+```markdown
+├── aluracursos.png
+├── db-noticias-configmap.yml
+├── db-noticias-svc.yml
+├── db-noticias.yml
+├── portal-configmap.yml
+├── portal-service.yml
+├── portal.yml
+├── sistema-noticias-configmap.yml
+├── sistema-noticias-service.yml
+└── sistema-noticias.yml
+```
 
 - `IP` - IP publico
 - `DNS` - DNS publico
 
 ### Usage
-
-```hcl
-module "aws_dev" {
-  source        = "../../infra"
-  instance      = "t2.micro"
-  aws_region    = "us-east-2"
-  ssh-key       = "iac_alura_dev"
-  instance_name = "dev"
-}
-module "aws_prod" {
-  source        = "../../infra"
-  instance      = "t2.medium"
-  aws_region    = "us-east-2"
-  ssh-key       = "ssh_key_name"
-  instance_name = "prod"
-}
-```
-
-## 2 - Aplicando as configurações.
-
-```sh
-cd env/dev ou cd env/prod
-terraform init
-terraform plan
-terraform apply
-ansible-playbook playbook.yml -i hosts.yml -u user --private-key ssh-key
-```
-
-O arquivo hosts.yml deve conter o ip publico do servidor
 
 ## Autor
 
