@@ -41,7 +41,19 @@ O projeto possui os seguintes items:
 
 `kubectl apply -f item`
 
-### Usage
+## 4 - Acessando o Portal de Noticias
+
+Para acessar o Portal e o Sistema de Noticias fora do cluster é necessario fazer as seguintes configurações
+
+`minikube service portal-svc --url`
+`minikube sistema-noticias-svc --url`
+
+`minikube service list`
+
+<p>
+  <img alt="Schema" src="./service_list.png" />
+  
+</p>
 
 ## Autor
 
