@@ -7,16 +7,21 @@
 
 ### Projeto Kubernetes demonstrado no curso da Alura
 
-## 1 - Instalação Minikube.
+## 1 - Instalação.
+
+### Kubectl
+
+Kubernetes command-line tools(<a href="https://kubernetes.io/docs/tasks/tools/">kubectl</a>) permite executar comandos em seus clusters kubernetes
+
+### Minikube
 
 <a href='https://minikube.sigs.k8s.io/docs/start/' target="_blank">Minikube</a> é uma ferramenta que facilita o aprendizado e desenvolvimento com kubernetes de fácil instalação.
 
-### Input
+### Iniciando o cluster
 
-- `instance` - "t2-micro"
-- `aws_region` - "us-east-2"
-- `ssh-key` - "ssh_key_name"
-- `instance_name` - "dev"
+`minikube start --vm-driver=virtualbox`
+
+<a href="https://minikube.sigs.k8s.io/docs/drivers/" target="_blank">Ver lista de drivers</a>
 
 ### Output
 
@@ -42,7 +47,7 @@ module "aws_prod" {
 }
 ```
 
-## 2 - Criando maquina de desenvolvimento e produção.
+## 2 - Aplicando as configurações.
 
 ```sh
 cd env/dev ou cd env/prod
