@@ -9,7 +9,7 @@
 
 ## 1 - Instalação Minikube.
 
-Minikube é uma ferramenta que facilita o aprendizado e desenvolvimento com kubernetes de fácil instalação.
+<a href='https://minikube.sigs.k8s.io/docs/start/' target="_blank">Minikube</a> é uma ferramenta que facilita o aprendizado e desenvolvimento com kubernetes de fácil instalação.
 
 ### Input
 
