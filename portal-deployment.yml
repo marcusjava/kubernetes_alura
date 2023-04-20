@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: portal
+  template:
+    metadata:
+      name: portal-noticias
+      labels:
+        "app": "portal"
+    spec:
+      containers:
+        - name: portal-noticias
+          image: aluracursos/portal-noticias:1
+          resources:
+            limits:
+              cpu: "0.3"
+              memory: "256Mi"
+            requests:
+              cpu: "0.1"
+              memory: "128Mi"
+          envFrom:
+            - configMapRef:
+                name: portal-configmap
+          ports:
+            - containerPort: 80
