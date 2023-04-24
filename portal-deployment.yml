@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: portal-noticias
-          image: aluracursos/portal-noticias:1
+          image: aluracursos/portal-noticias:2
           resources:
             limits:
               cpu: "0.3"
