@@ -25,6 +25,14 @@ spec:
               memory: "64Mi"
           ports:
             - containerPort: 80
+          volumeMounts:
+            - mountPath: /var/www/html/uploads
+              name: uploads-vol
           envFrom:
             - configMapRef:
                 name: sistema-configmap
+      volumes:
+        - name: uploads-vol
+          hostPath:
+            path: /data/uploads
+            type: DirectoryOrCreate
