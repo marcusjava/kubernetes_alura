@@ -25,6 +25,14 @@ spec:
               memory: "512Mi"
           ports:
             - containerPort: 3306
+          volumeMounts:
+            - mountPath: /var/lib/mysql
+              name: mysql-vol
           envFrom:
             - configMapRef:
                 name: db-configmap
+      volumes:
+        - name: mysql-vol
+          hostPath:
+            path: /data/mysql
+            type: DirectoryOrCreate
