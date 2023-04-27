@@ -1,5 +1,5 @@
 <p>
-  <img alt="Schema" src="./aluracursos.png" />
+  <img alt="Schema" src="./deployment.png" />
   
 </p>
 
