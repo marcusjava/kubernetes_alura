@@ -25,18 +25,23 @@ Kubernetes command-line tools(<a href="https://kubernetes.io/docs/tasks/tools/">
 
 ## 3 - Aplicando as configurações
 
-O projeto possui os seguintes items:
+- portal-configmap.yml - Alterar IP_SISTEMA para o IP externo do sistema noticias
+
+Criar os seguintes items nessa ordem:
 
 ```markdown
 ├── db-noticias-configmap.yml
 ├── db-noticias-svc.yml
-├── db-noticias.yml
+├── db-deployment.yml
 ├── portal-configmap.yml
 ├── portal-service.yml
-├── portal.yml
+├── portal-deployment.yml
+├── portal-hpa.yml
 ├── sistema-noticias-configmap.yml
 ├── sistema-noticias-service.yml
-└── sistema-noticias.yml
+├── sistema-noticias-deployment.yml
+├── admin-dashboard.yml
+├── cluster-admin.yml
 ```
 
 `kubectl apply -f item`
@@ -57,6 +62,17 @@ Para acessar o Portal e o Sistema de Noticias fora do cluster é necessario faze
 </p>
 
 Acessar as URLs geradas no navegador
+
+## 4 - Acessando o Kubernetes Dashboard
+
+<p>
+  <img alt="Schema" src="./kubernetes_dashboard.png" />
+  
+</p>
+
+Kubernetes Dashboard é ferramenta web onde é possível criar e modificar recursos como Deployments, Jobs, Services, verificar de forma visual consumo de CPU e memoria e monitorar o estado dos pods
+
+<a href="https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/" target="_blank">Documentação</a>
 
 ## Autor
 
